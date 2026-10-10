@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full-Stack Developer Portfolio | Md. Naushad Ansari</title>
+<meta name="description" content="Explore Md. Naushad Ansari's portfolio: a Computer Science Engineering student building full-stack projects with Python, Flask, React, JavaScript and MySQL.">
+<link rel="canonical" href="https://portfolio.vercel.app/">
+<meta property="og:title" content="Full-Stack Developer Portfolio | Md. Naushad Ansari">
+<meta property="og:description" content="Explore Md. Naushad Ansari's portfolio: a Computer Science Engineering student building full-stack projects with Python, Flask, React, JavaScript and MySQL.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://portfolio.vercel.app/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://portfolio.vercel.app/assets/images/profile-portrait.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="768">
+<meta property="og:image:height" content="1365">
+<meta property="og:image:alt" content="Portrait of Md. Naushad Ansari">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Full-Stack Developer Portfolio | Md. Naushad Ansari">
+<meta name="twitter:description" content="Computer Science Engineering student building full-stack projects with Python, Flask, React and MySQL.">
+<meta name="twitter:image" content="https://portfolio.vercel.app/assets/images/profile-portrait.jpg">
+<meta name="twitter:image:alt" content="Portrait of Md. Naushad Ansari">
+<link rel="icon" type="image/png" href="assets/images/naushad-favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@500;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Md. Naushad Ansari",
+  "url": "https://portfolio.vercel.app/",
+  "image": "https://portfolio.vercel.app/assets/images/profile-portrait.jpg",
+  "description": "Computer Science Engineering student and aspiring full-stack developer building software projects with Python, Flask, React, JavaScript and MySQL.",
+  "sameAs": [
+    "https://github.com/naushad234"
+  ],
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "ICFAI University Hyderabad"
+  },
+  "knowsAbout": [
+    "Full-stack web development",
+    "Python",
+    "Flask",
+    "React",
+    "JavaScript",
+    "MySQL",
+    "Computer science"
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-nav" id="siteNav">
+  <div class="wrap nav-inner">
+    <a href="#home" class="brand">
+      <img class="logo-mark" src="assets/images/naushad-logo-small.jpg" alt="" aria-hidden="true" width="128" height="128" decoding="async">
+      <span class="logo-word">Md-Naushad<span>.</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#skills">Skills</a>
+      <a href="#proof">Profiles</a>
+      <a href="#contact">Contact</a>
+      <a href="https://github.com/naushad234" target="_blank" rel="noopener">GitHub</a>
+      <a href="assets/images/resume.pdf" class="nav-cta">Resume</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+    </nav>
+    <div style="display:flex; align-items:center; gap:12px;">
+      <button class="theme-toggle" id="themeToggleMobile" aria-label="Switch to dark mode" style="display:none;">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation" aria-hidden="true" inert>
+  <a href="#work">Work</a>
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#skills">Skills</a>
+  <a href="#proof">Profiles</a>
+  <a href="#contact">Contact</a>
+  <a href="https://github.com/naushad234" target="_blank" rel="noopener">GitHub</a>
+  <a href="assets/images/resume.pdf">Resume</a>
+</nav>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div class="hero-copy reveal">
+        <span class="status-pill"><span class="status-dot"></span> COMPUTER SCIENCE ENGINEERING STUDENT</span>
+        <h1>Building <span class="accent-word">full-stack</span> software from idea to implementation.</h1>
+        <p class="hero-sub">I'm Md. Naushad Ansari, a Computer Science Engineering student and aspiring full-stack developer. I build practical projects with Python, Flask, React, JavaScript and MySQL, from backend systems to interactive web applications.</p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">View My Work <span class="arrow">→</span></a>
+          <a href="https://github.com/naushad234" target="_blank" rel="noopener" class="btn btn-ghost">GitHub <span class="arrow">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-3d-stage reveal">
+        <canvas id="hero3d-canvas" aria-hidden="true"></canvas>
+        <div class="portrait-frame">
+          <img
+            src="assets/images/profile-portrait.jpg"
+            alt="Md. Naushad Ansari, Computer Science Engineering student and aspiring full-stack developer"
+            width="768"
+            height="1365"
+            fetchpriority="high"
+            decoding="async"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CURRENTLY ================= -->
+  <section id="currently">
+    <div class="wrap">
+      <div class="section-head reveal"><h2>Currently</h2></div>
+      <div class="currently-grid reveal">
+        <div class="currently-card"><span class="dot"></span><p>CSE @ ICFAI University Hyderabad</p></div>
+        <div class="currently-card"><span class="dot"></span><p>Building software projects</p></div>
+        <div class="currently-card"><span class="dot"></span><p>Improving Data Structures &amp; Algorithms</p></div>
+        <div class="currently-card"><span class="dot"></span><p>Exploring Python, Flask and modern development</p></div>
+        <div class="currently-card"><span class="dot"></span><p>Learning through real projects and internships</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SELECTED WORK ================= -->
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2>Selected work</h2>
+        <p>Six projects, chosen rather than auto-listed — each one built end to end.</p>
+      </div>
+      <div class="project-list">
+
+        <div class="tilt-card reveal">
+          <article class="project-card featured">
+            <div class="project-info">
+              <span class="position-tag">FLAGSHIP PROJECT</span>
+              <div class="project-num">01</div>
+              <div class="project-cat">Full-Stack Web Application</div>
+              <h3 class="project-title">Hospital Management System</h3>
+              <p class="project-desc">A multi-role hospital management platform handling patient-care operations end to end — built with Flask and MySQL.</p>
+
+              <div class="project-block">
+                <span class="project-block-label">Technical Implementation</span>
+                <ul class="project-feature-list">
+                  <li>Flask backend with session-based authentication and role-based access control (Admin vs. Patient), enforced through route-protecting decorators</li>
+                  <li>10 relational MySQL tables — patients, doctors, appointments, medical records, departments, room allotments, vaccination records, doctor schedules, chatbot Q&amp;A, admins — via mysql-connector-python</li>
+                  <li>Full CRUD routes for every module, server-rendered with Flask/Jinja templates</li>
+                  <li>Patients restricted to read-only access; admins get full add/update/delete permissions via a custom decorator</li>
+                  <li>Rule-based chatbot backed by its own database table for common patient FAQs</li>
+                </ul>
+              </div>
+
+              <div class="project-block">
+                <span class="project-block-label">Tech Stack</span>
+                <div class="tag-row"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">MySQL</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+              </div>
+
+              <div class="project-block">
+                <span class="project-block-label">Key Features</span>
+                <ul class="project-feature-list">
+                  <li>Role-based login (Admin / Patient) with session management</li>
+                  <li>Patient, doctor, appointment &amp; medical record management</li>
+                  <li>Room allotment tracking with discharge workflow</li>
+                  <li>Vaccination record management</li>
+                  <li>Rule-based FAQ chatbot</li>
+                </ul>
+              </div>
+
+              <!-- LIVE DEMO: no deployed URL found in the project source/README. Add it here when hosted: <a href="YOUR_LIVE_URL" target="_blank" rel="noopener" class="btn-demo">Live Demo ↗</a> -->
+              <div class="project-links"><a href="https://github.com/naushad234/Hospital_Management-Icp" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a></div>
+            </div>
+            <div class="project-media">
+              <div class="media-frame">
+                <div class="media-frame-bar"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                <div class="media-frame-shot"><img src="assets/images/hospital-project.jpg" alt="Hospital Management System dashboard screenshot" width="1200" height="800" loading="lazy" decoding="async"></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="tilt-card reveal">
+          <article class="project-card featured">
+            <div class="project-info">
+              <span class="position-tag">HIGH-VALUE PROJECT</span>
+              <div class="project-num">02</div>
+              <div class="project-cat">React Web Application • API Integration</div>
+              <h3 class="project-title">SkyCast — Weather Dashboard</h3>
+              <p class="project-desc">A React weather dashboard built on the OpenWeatherMap API, with real data visualization and persisted preferences.</p>
+
+              <div class="project-block">
+                <span class="project-block-label">Technical Implementation</span>
+                <ul class="project-feature-list">
+                  <li>Built with React and a Context API store (WeatherContext) as the single source of truth for location, units, weather data and favorites</li>
+                  <li>Dedicated API layer wrapping OpenWeatherMap's One Call 3.0, Geocoding and Air Pollution endpoints, with typed error handling for rate limits, bad keys and not-found locations</li>
+                  <li>Custom hooks: useGeolocation (auto-detects location on load), useDebounce (350ms debounced search), useLocalStorage (persists units/favorites/settings)</li>
+                  <li>Interactive radar map via react-leaflet with switchable precipitation/cloud/temperature tile overlays</li>
+                  <li>Precipitation charting with Chart.js; falls back to the free current-weather endpoint if One Call 3.0 isn't enabled on the API key</li>
+                </ul>
+              </div>
+
+              <div class="project-block">
+                <span class="project-block-label">Tech Stack</span>
+                <div class="tag-row"><span class="tag">React</span><span class="tag">JavaScript</span><span class="tag">OpenWeatherMap API</span><span class="tag">React Leaflet</span><span class="tag">Chart.js</span><span class="tag">Context API</span></div>
+              </div>
+
+              <div class="project-block">
+                <span class="project-block-label">Key Features</span>
+                <ul class="project-feature-list">
+                  <li>Auto-geolocation + debounced city search with autocomplete</li>
+                  <li>Hourly &amp; 7-day forecast, air quality index, sunrise/sunset</li>
+                  <li>Interactive radar map with multiple weather layers</li>
+                  <li>Saved locations &amp; settings persisted in localStorage</li>
+                </ul>
+              </div>
+
+              <div class="project-links"><a href="https://sky-idea.vercel.app/" target="_blank" rel="noopener">Live Demo <span class="arrow">↗</span></a><a href="https://github.com/naushad234/Weather-Predication" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a></div>
+            </div>
+            <div class="project-media">
+              <div class="media-frame">
+                <div class="media-frame-bar"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                <div class="media-frame-shot"><img src="assets/images/skycast-project.jpg" alt="SkyCast weather dashboard screenshot" width="1200" height="800" loading="lazy" decoding="async"></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="tilt-card reveal">
+          <article class="project-card">
+            <div class="project-info">
+              <span class="position-tag">SECOND FLAGSHIP</span>
+              <div class="project-num">03</div>
+              <div class="project-cat">Full-Stack Web Application</div>
+              <h3 class="project-title">Video Streaming Web Application</h3>
+              <p class="project-desc">A Netflix-inspired streaming platform front end backed by a Flask + MySQL content management system.</p>
+
+              <div class="project-block">
+                <span class="project-block-label">Technical Implementation</span>
+                <ul class="project-feature-list">
+                  <li>Flask backend with MySQL modeling content and genres, linked through a many-to-many junction table (content_genres)</li>
+                  <li>Admin authentication with SHA-256 password hashing, gated by a route-protecting decorator</li>
+                  <li>Dynamic queries for featured, trending (sorted by view count) and newest content; genre pages built with SQL JOINs</li>
+                  <li>Full admin CRUD for content (add / edit / delete) through a dedicated dashboard</li>
+                  <li>Server-side search across the content table</li>
+                </ul>
+              </div>
+
+              <div class="project-block">
+                <span class="project-block-label">Tech Stack</span>
+                <div class="tag-row"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">MySQL</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+              </div>
+
+              <div class="project-block">
+                <span class="project-block-label">Key Features</span>
+                <ul class="project-feature-list">
+                  <li>Browse by genre, trending &amp; newest releases</li>
+                  <li>Server-side search</li>
+                  <li>Admin dashboard with authenticated content management</li>
+                  <li>Netflix-style UI: hero banners, carousels, watch page</li>
+                </ul>
+              </div>
+
+              <!-- LIVE DEMO: no deployed URL found in the project source/README. Add it here when hosted: <a href="YOUR_LIVE_URL" target="_blank" rel="noopener" class="btn-demo">Live Demo ↗</a> -->
+              <div class="project-links"><a href="https://github.com/naushad234/Video-Streaming-Web-Application" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a></div>
+            </div>
+            <div class="project-media">
+              <div class="media-frame">
+                <div class="media-frame-bar"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                <div class="media-frame-shot"><img src="assets/images/streaming-project.jpg" alt="StreamFlow video streaming app screenshot" width="1200" height="800" loading="lazy" decoding="async"></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="tilt-card reveal">
+          <article class="project-card compact">
+            <div class="project-info">
+              <span class="position-tag">SUPPORTING PROJECT</span>
+              <div class="project-num">04</div>
+              <div class="project-cat">Frontend Web Application</div>
+              <h3 class="project-title">Multi-Function Calculator</h3>
+              <p class="project-desc">An all-in-one calculator utility built in vanilla JavaScript — arithmetic, conversions and everyday math tools in one interface.</p>
+
+              <div class="project-block">
+                <span class="project-block-label">Key Features</span>
+                <ul class="project-feature-list">
+                  <li>Standard arithmetic &amp; factorial calculation</li>
+                  <li>Binary ↔ decimal conversion</li>
+                  <li>Matrix operations (add / subtract / multiply)</li>
+                  <li>GST &amp; currency conversion, multiplication table generator</li>
+                </ul>
+              </div>
+
+              <div class="project-block">
+                <span class="project-block-label">Tech Stack</span>
+                <div class="tag-row"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+              </div>
+
+              <!-- LIVE DEMO: no deployed URL found in the project source/README. Add it here when hosted: <a href="YOUR_LIVE_URL" target="_blank" rel="noopener" class="btn-demo">Live Demo ↗</a> -->
+              <div class="project-links"><a href="https://github.com/naushad234/Mutli-Function-Calculator" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a></div>
+            </div>
+            <div class="project-media">
+              <div class="media-frame">
+                <div class="media-frame-bar"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                <div class="media-frame-shot"><img src="assets/images/calculator-project.jpg" alt="CalcPro multi-function calculator screenshot" width="1200" height="800" loading="lazy" decoding="async"></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="tilt-card reveal">
+          <article class="project-card compact">
+            <div class="project-info">
+              <span class="position-tag">CREATIVE / EXPERIMENTAL</span>
+              <div class="project-num">05</div>
+              <div class="project-cat">Creative Frontend Project</div>
+              <h3 class="project-title">Birthday Surprise</h3>
+              <p class="project-desc">An interactive single-page experience built with canvas-based animation and vanilla JavaScript.</p>
+
+              <div class="project-block">
+                <span class="project-block-label">Key Features</span>
+                <ul class="project-feature-list">
+                  <li>Canvas particle system (sparks, hearts, petals) reacting to mouse/touch</li>
+                  <li>Typing-effect text animation &amp; rotating quote carousel with swipe support</li>
+                  <li>Modal-based surprise reveal interaction</li>
+                </ul>
+              </div>
+
+              <div class="project-block">
+                <span class="project-block-label">Tech Stack</span>
+                <div class="tag-row"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+              </div>
+
+              <!-- LIVE DEMO: no deployed URL found in the project source/README. Add it here when hosted: <a href="YOUR_LIVE_URL" target="_blank" rel="noopener" class="btn-demo">Live Demo ↗</a> -->
+              <div class="project-links"><a href="https://github.com/naushad234/Birthday-Surprise-For-Your-Love-Ones" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a></div>
+            </div>
+            <div class="project-media">
+              <div class="media-frame">
+                <div class="media-frame-bar"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                <div class="media-frame-shot"><img src="assets/images/birthday-project.jpg" alt="Birthday Surprise interactive website screenshot" width="1200" height="800" loading="lazy" decoding="async"></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="tilt-card reveal">
+          <article class="project-card compact">
+            <div class="project-info">
+              <span class="position-tag">MULTI-PURPOSE PLATFORM</span>
+              <div class="project-num">06</div>
+              <div class="project-cat">Responsive Web Platform</div>
+              <h3 class="project-title">EliteZone — Multi-Purpose Web Platform</h3>
+              <p class="project-desc">A centralized, responsive platform bringing together shopping, entertainment, gaming, anime and online services in one place.</p>
+
+              <div class="project-block">
+                <span class="project-block-label">Key Features</span>
+                <ul class="project-feature-list">
+                  <li>Interactive dashboard with sidebar navigation, service cards and animations</li>
+                  <li>Customizable theme, dark mode, animations, compact mode and content preferences</li>
+                  <li>Categorized links to external services across shopping, entertainment, gaming, anime and more</li>
+                  <li>Mobile-responsive layouts and navigation</li>
+                  <li>Managed with GitHub and deployed using Vercel</li>
+                </ul>
+              </div>
+
+              <div class="project-block">
+                <span class="project-block-label">Tech Stack</span>
+                <div class="tag-row"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">Bootstrap 5</span><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Vercel</span></div>
+              </div>
+              <div class="project-links"><a href="https://elite-zone-templates.vercel.app/" target="_blank" rel="noopener">Live Demo <span class="arrow">↗</span></a><a href="https://github.com/naushad234/Elite-Zone/tree/main" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a></div>
+            </div>
+            <div class="project-media">
+              <div class="media-frame">
+                <div class="media-frame-bar"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                <div class="media-frame-shot"><img src="assets/images/elitezone-project.jpg" alt="EliteZone multi-purpose web platform dashboard showing categorized shopping, entertainment and gaming services" width="1200" height="549" loading="lazy" decoding="async"></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head reveal"><h2>Experience</h2></div>
+      <div class="exp-item reveal">
+        <div class="exp-date">MAY 2026 — JUL 2026</div>
+        <div>
+          <div class="exp-role">Software Intern</div>
+          <div class="exp-org">OrbianAI, Pune, India</div>
+          <p class="exp-desc">Completed a software internship at OrbianAI, working across practical development tasks and contributing to real project work during the internship period. Recognized as a diligent, independent professional with strong problem-solving skills and a genuine curiosity for emerging technologies.</p>
+          <div class="exp-cert exp-cert-tilt">
+            <img src="assets/images/internship-certificate.jpg" alt="OrbianAI internship completion certificate for Md. Naushad Ansari, Software Intern, May–July 2026" width="594" height="636" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EDUCATION ================= -->
+  <section id="education">
+    <div class="wrap">
+      <div class="section-head reveal"><h2>Education</h2></div>
+      <div class="reveal">
+        <div class="edu-item">
+          <div>
+            <div class="edu-school">ICFAI University Hyderabad</div>
+            <div class="edu-detail">B.Tech, Computer Science Engineering (Core)</div>
+          </div>
+          <div class="edu-period">3rd Year</div>
+        </div>
+        <div class="edu-item">
+          <div>
+            <div class="edu-school">Honey Holy Trinity School</div>
+            <div class="edu-detail">Jharkhand</div>
+          </div>
+          <div class="edu-period">Schooling</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ACHIEVEMENTS ================= -->
+  <section id="achievements">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2>Achievements</h2>
+        <p>Recognitions tied to real work — internships, hackathons and milestones.</p>
+      </div>
+      <div class="achv-grid reveal">
+
+        <div class="achv-card">
+          <div class="achv-meta"><span class="achv-date">May – Jul 2026</span></div>
+          <h3>Software Internship Completion</h3>
+          <p>Completed a software internship at OrbianAI, recognized for strong problem-solving skills and independent, diligent work.</p>
+          <div class="tag-row"><span class="tag">Software Development</span></div>
+          <a href="#experience" class="achv-link">View certificate &amp; details <span class="arrow">→</span></a>
+        </div>
+
+        <div class="achv-card">
+          <h3>Hackpreneur — Stylezila AI Agents</h3>
+          <p>Developed two AI agents for Stylezila: one to handle bookings and another to assess refund requests based on property usage and damage.</p>
+          <div class="tag-row"><span class="tag">AI Agents</span><span class="tag">Booking</span><span class="tag">Refund Assessment</span><span class="tag">n8n</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head reveal"><h2>Skills</h2></div>
+      <div class="skills-grid reveal">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <div class="skill-tags"><span class="skill-tag">C++</span><span class="skill-tag">Python</span><span class="skill-tag">JavaScript</span><span class="skill-tag">C</span></div>
+        </div>
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <div class="skill-tags"><span class="skill-tag">HTML</span><span class="skill-tag">CSS</span><span class="skill-tag">JavaScript</span><span class="skill-tag">React</span></div>
+        </div>
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <div class="skill-tags"><span class="skill-tag">Python</span><span class="skill-tag">Flask</span><span class="skill-tag">REST APIs</span></div>
+        </div>
+        <div class="skill-group">
+          <h3>Databases</h3>
+          <div class="skill-tags"><span class="skill-tag">MySQL</span></div>
+        </div>
+        <div class="skill-group">
+          <h3>Developer Tools</h3>
+          <div class="skill-tags"><span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span class="skill-tag">VS Code</span></div>
+        </div>
+        <div class="skill-group">
+          <h3>Computer Science Fundamentals</h3>
+          <div class="skill-tags"><span class="skill-tag">Data Structures &amp; Algorithms</span><span class="skill-tag">Object-Oriented Programming</span><span class="skill-tag">DBMS</span><span class="skill-tag">Operating Systems</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT / HOW I WORK ================= -->
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="reveal">
+        <div class="section-head" style="margin-bottom:24px;"><h2>About</h2></div>
+        <div class="about-copy">
+          <p>I'm a Computer Science Engineering student focused on turning ideas into working software. I enjoy solving programming problems, building practical projects, and exploring new technologies through hands-on development.</p>
+          <p>I'm currently strengthening my software development, data structures and algorithms through practical projects — building things end to end rather than just studying theory.</p>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="section-head" style="margin-bottom:8px;"><h2>How I work</h2></div>
+        <div class="how-list">
+          <div class="how-item"><span class="how-verb">Build</span><span class="how-text">Learn by creating real projects.</span></div>
+          <div class="how-item"><span class="how-verb">Learn</span><span class="how-text">Continuously improve technical fundamentals.</span></div>
+          <div class="how-item"><span class="how-verb">Solve</span><span class="how-text">Approach problems logically and systematically.</span></div>
+          <div class="how-item"><span class="how-verb">Improve</span><span class="how-text">Iterate instead of settling for the first version.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ENGINEERING FOCUS ================= -->
+  <section id="engineering-focus">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2>Engineering Focus</h2>
+        <p>What I'm currently developing and improving — grounded in the work behind this portfolio.</p>
+      </div>
+      <div class="focus-grid reveal">
+        <div class="focus-card">
+          <h3>Backend Development</h3>
+          <p>Building server-side logic with Python and Flask — session-based auth, role-based access control and route-level permissions, as implemented in the Hospital Management System and Streaming App.</p>
+          <div class="tag-row"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">REST APIs</span></div>
+        </div>
+        <div class="focus-card">
+          <h3>Full-Stack Web Development</h3>
+          <p>Connecting React and JavaScript front ends to Python backends — from SkyCast's API-driven dashboard to Flask-rendered, database-backed interfaces.</p>
+          <div class="tag-row"><span class="tag">React</span><span class="tag">JavaScript</span><span class="tag">HTML</span><span class="tag">CSS</span></div>
+        </div>
+        <div class="focus-card">
+          <h3>Data Structures &amp; Algorithms</h3>
+          <p>Strengthening problem-solving fundamentals in C++ and Python through coursework and practice — the groundwork behind every project here.</p>
+          <div class="tag-row"><span class="tag">C++</span><span class="tag">Python</span><span class="tag">DSA</span></div>
+        </div>
+        <div class="focus-card">
+          <h3>Databases</h3>
+          <p>Designing relational schemas and writing queries in MySQL, including a 10-table schema with joins and full CRUD operations in the Hospital Management System.</p>
+          <div class="tag-row"><span class="tag">MySQL</span><span class="tag">DBMS</span></div>
+        </div>
+        <div class="focus-card focus-card-future">
+          <span class="focus-badge">Currently exploring</span>
+          <h3>AI / ML Exploration</h3>
+          <p>Starting to learn machine learning fundamentals as a next step beyond web development — not yet reflected in a shipped project.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROOF / CODING PROFILES ================= -->
+  <section id="proof">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2>Proof &amp; coding profiles</h2>
+        <p>Explore my public work and professional profile, with coding-platform details to follow.</p>
+      </div>
+      <div class="proof-grid">
+      <div class="cta-card reveal">
+        <h3 class="profile-card-title">
+          <svg class="platform-icon icon-github" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M12 2C6.48 2 2 6.58 2 12.22c0 4.5 2.87 8.32 6.84 9.67.5.1.68-.22.68-.48 0-.24-.01-1.03-.02-1.87-2.78.62-3.37-1.38-3.37-1.38-.45-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.9 1.56 2.36 1.11 2.94.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.02-2.75-.1-.25-.44-1.28.1-2.67 0 0 .84-.27 2.75 1.05A9.11 9.11 0 0 1 12 6.84c.85 0 1.7.12 2.5.35 1.91-1.32 2.75-1.05 2.75-1.05.54 1.39.2 2.42.1 2.67.64.72 1.02 1.63 1.02 2.75 0 3.93-2.35 4.8-4.58 5.05.36.32.68.96.68 1.94 0 1.4-.01 2.52-.01 2.86 0 .26.18.59.69.49A10.24 10.24 0 0 0 22 12.22C22 6.58 17.52 2 12 2Z"/>
+          </svg>
+          GitHub
+        </h3>
+        <p>Browse my public repositories, project source code and development experiments.</p>
+        <a href="https://github.com/naushad234" target="_blank" rel="noopener" class="btn btn-ghost">View GitHub <span class="arrow">↗</span></a>
+      </div>
+      <div class="cta-card reveal">
+        <h3 class="profile-card-title">
+          <svg class="platform-icon icon-linkedin" viewBox="0 0 24 24" role="img" aria-label="LinkedIn logo">
+            <rect width="24" height="24" rx="5" fill="#0A66C2"/>
+            <circle cx="7" cy="7" r="1.35" fill="#fff"/>
+            <path fill="#fff" d="M5.8 10h2.4v8H5.8zm4 0h2.3v1.1c.55-.82 1.42-1.3 2.55-1.3 2.16 0 3.55 1.4 3.55 4.02V18h-2.4v-3.85c0-1.28-.48-2.03-1.56-2.03-1.17 0-2.04.82-2.04 2.2V18H9.8z"/>
+          </svg>
+          LinkedIn
+        </h3>
+        <p>Connect with me professionally and follow my development journey.</p>
+        <a href="https://www.linkedin.com/in/md-naushad-ansari-940794323" target="_blank" rel="noopener" class="btn btn-ghost">View LinkedIn <span class="arrow">↗</span></a>
+      </div>
+      <div class="cta-card reveal">
+        <h3 class="profile-card-title">
+          <svg class="platform-icon icon-leetcode" viewBox="0 0 24 24" role="img" aria-label="LeetCode logo">
+            <rect width="24" height="24" rx="5" fill="#171717"/>
+            <g transform="translate(2.5 2.5) scale(.79)">
+              <path fill="#FFA116" d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
+            </g>
+          </svg>
+          LeetCode
+        </h3>
+        <p>Visit my LeetCode profile. No problem-solving statistics are shown because none have been independently verified.</p>
+        <a href="https://leetcode.com/u/naushad--83/" target="_blank" rel="noopener" class="btn btn-ghost">View LeetCode <span class="arrow">↗</span></a>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact">
+    <div class="contact-section">
+      <div class="contact-orb" aria-hidden="true"></div>
+      <div class="wrap contact-inner">
+        <h2 class="reveal">Let's build something interesting.</h2>
+        <p class="sub reveal">Have an opportunity, project, collaboration or just want to connect?</p>
+        <a class="contact-email reveal" href="mailto:mdnaushadansari72786@gmail.com">mdnaushadansari72786@gmail.com</a>
+        <div class="contact-actions reveal">
+          <a href="mailto:mdnaushadansari72786@gmail.com" class="btn btn-primary">Email me <span class="arrow">→</span></a>
+          <a href="https://www.linkedin.com/in/md-naushad-ansari-940794323" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn <span class="arrow">↗</span></a>
+          <a href="https://github.com/naushad234" target="_blank" rel="noopener" class="btn btn-ghost">GitHub <span class="arrow">↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-divider" role="separator" aria-hidden="true"></div>
+    <div class="footer-inner">
+      <div>
+        <div class="brand">
+          <img class="logo-mark" src="assets/images/naushad-logo-small.jpg" alt="" aria-hidden="true" width="128" height="128" loading="lazy" decoding="async">
+          <span class="logo-word">Md-Naushad Ansari<span>.</span></span>
+        </div>
+        <div class="footer-tag">Always ready to learn.</div>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/naushad234" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/md-naushad-ansari-940794323" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:mdnaushadansari72786@gmail.com">Gmail</a>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <span>© 2026 Md. Naushad Ansari</span>
+      <span>Built with code &amp; curiosity.</span>
+    </div>
+  </div>
+</footer>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script defer src="assets/hero3d.js"></script>
+<script defer src="assets/main.js"></script>
+</body>
+</html>
