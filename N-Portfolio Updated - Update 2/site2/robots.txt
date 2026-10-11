@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://portfolio.vercel.app/sitemap.xml
+Sitemap:https://md-naushad-portfolio.vercel.app/sitemap.xml
