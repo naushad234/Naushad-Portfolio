@@ -3,6 +3,7 @@
 
   // ---- Theme ----
   const themeBtns = [document.getElementById('themeToggle'), document.getElementById('themeToggleMobile')];
+  const profileImage = document.querySelector('.portrait-frame img');
   const themeToast = document.createElement('div');
   themeToast.className = 'theme-toast';
   themeToast.setAttribute('role', 'status');
@@ -11,7 +12,13 @@
   let themeToastTimer;
   function setTheme(mode){
     if(mode === 'dark'){ root.classList.add('dark'); } else { root.classList.remove('dark'); }
-    localStorage.setItem('naushad-theme', mode);
+    if(profileImage){
+      const portraitSrc = profileImage.getAttribute('data-' + mode + '-src');
+      if(portraitSrc && profileImage.getAttribute('src') !== portraitSrc){
+        profileImage.setAttribute('src', portraitSrc);
+      }
+    }
+    localStorage.setItem('naushad-theme-v2', mode);
     themeBtns.forEach(btn => {
       if(btn) btn.setAttribute('aria-label', mode === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
     });
@@ -22,8 +29,8 @@
     window.clearTimeout(themeToastTimer);
     themeToastTimer = window.setTimeout(() => themeToast.classList.remove('visible'), 1800);
   }
-  const savedTheme = localStorage.getItem('naushad-theme');
-  setTheme(savedTheme || 'light');
+  const savedTheme = localStorage.getItem('naushad-theme-v2');
+  setTheme(savedTheme || 'dark');
   themeBtns.forEach(btn => {
     if(!btn) return;
     btn.addEventListener('click', () => {
@@ -75,7 +82,7 @@
     }
   }
   function syncMobileControls(){
-    const mobile = window.innerWidth <= 900;
+    const mobile = window.innerWidth <= 1100;
     if(hamburger) hamburger.style.display = mobile ? 'flex' : 'none';
     if(themeToggleMobile) themeToggleMobile.style.display = mobile ? 'flex' : 'none';
     if(navLinksWrap) navLinksWrap.style.display = mobile ? 'none' : 'flex';
@@ -139,9 +146,9 @@
     });
   }
 
-  // ---- 3D tilt on project cards & certificate ----
+  // ---- 3D tilt on project cards ----
   if(hasFinePointer && !prefersReducedMotion){
-    document.querySelectorAll('.tilt-card .project-card, .exp-cert-tilt').forEach(card => {
+    document.querySelectorAll('.tilt-card .project-card').forEach(card => {
       const strength = 7;
       card.addEventListener('mousemove', (e) => {
         const r = card.getBoundingClientRect();
