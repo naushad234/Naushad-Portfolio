@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Md. Naushad Ansari | Full-Stack Developer</title>
+<title>Naushad Ansari | ASPIRING SOFTWARE DEVELOPER</title>
 <meta name="description" content="Full-stack developer and Computer Science Engineering student from Hyderabad building practical web apps with Python, Flask, React, JavaScript, and MySQL.">
 <meta name="author" content="Md. Naushad Ansari">
 <meta name="robots" content="index, follow">
@@ -13,28 +13,29 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://md-naushad-portfolio.vercel.app/">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://md-naushad-portfolio.vercel.app/assets/images/profile-portrait.jpg">
-<meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:width" content="768">
-<meta property="og:image:height" content="1365">
+<meta property="og:image" content="https://md-naushad-portfolio.vercel.app/assets/images/profile-portrait.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="1536">
 <meta property="og:image:alt" content="Portrait of Md. Naushad Ansari">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Md. Naushad Ansari | Full-Stack Developer">
 <meta name="twitter:description" content="Full-stack developer and Computer Science Engineering student from Hyderabad building practical web apps with Python, Flask, React, JavaScript, and MySQL.">
-<meta name="twitter:image" content="https://md-naushad-portfolio.vercel.app/assets/images/profile-portrait.jpg">
+<meta name="twitter:image" content="https://md-naushad-portfolio.vercel.app/assets/images/profile-portrait.png">
 <meta name="twitter:image:alt" content="Portrait of Md. Naushad Ansari">
 <link rel="icon" type="image/png" href="assets/images/naushad-favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@500;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
+<noscript><style>body{opacity:1!important}</style></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Md. Naushad Ansari",
   "url": "https://md-naushad-portfolio.vercel.app/",
-  "image": "https://md-naushad-portfolio.vercel.app/assets/images/profile-portrait.jpg",
+  "image": "https://md-naushad-portfolio.vercel.app/assets/images/profile-portrait.png",
   "description": "Computer Science Engineering student and full-stack developer building practical web apps with Python, Flask, React, JavaScript, and MySQL.",
   "sameAs": [
     "https://github.com/naushad234"
@@ -60,8 +61,8 @@
 <header class="site-nav" id="siteNav">
   <div class="wrap nav-inner">
     <a href="#home" class="brand">
-      <img class="logo-mark" src="assets/images/naushad-logo-small.jpg" alt="" aria-hidden="true" width="128" height="128" decoding="async">
-      <span class="logo-word">Md-Naushad<span>.</span></span>
+      <img class="logo-mark" src="assets/images/naushad-logo-small.png" alt="" aria-hidden="true" width="140" height="140" decoding="async">
+      <span class="logo-word">Naushad<span>~</span></span>
     </a>
     <nav class="nav-links" id="navLinks" aria-label="Main navigation">
       <a href="#work">Work</a>
@@ -72,7 +73,7 @@
       <a href="#proof">Profiles</a>
       <a href="#contact">Contact</a>
       <a href="https://github.com/naushad234" target="_blank" rel="noopener">GitHub</a>
-      <a href="assets/images/resume.pdf" class="nav-cta">Resume</a>
+      <a href="assets/images/resume.docx" class="nav-cta">Resume</a>
       <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode">
         <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
@@ -120,10 +121,12 @@
         <canvas id="hero3d-canvas" aria-hidden="true"></canvas>
         <div class="portrait-frame">
           <img
-            src="assets/images/profile-portrait.jpg"
+            src="assets/images/profile-portrait.png"
+            data-light-src="assets/images/profile-portrait-light.png"
+            data-dark-src="assets/images/profile-portrait.png"
             alt="Md. Naushad Ansari, Computer Science Engineering student and aspiring full-stack developer"
-            width="768"
-            height="1365"
+            width="1024"
+            height="1536"
             fetchpriority="high"
             decoding="async"
           >
@@ -416,9 +419,9 @@
           <div class="exp-role">Software Intern</div>
           <div class="exp-org">OrbianAI, Pune, India</div>
           <p class="exp-desc">Completed a software internship at OrbianAI, working across practical development tasks and contributing to real project work during the internship period. Recognized as a diligent, independent professional with strong problem-solving skills and a genuine curiosity for emerging technologies.</p>
-          <div class="exp-cert exp-cert-tilt">
+          <a class="exp-cert" href="assets/images/internship-certificate.jpg" target="_blank" rel="noopener" aria-label="Open the full-size internship certificate">
             <img src="assets/images/internship-certificate.jpg" alt="OrbianAI internship completion certificate for Md. Naushad Ansari, Software Intern, May–July 2026" width="594" height="636" loading="lazy" decoding="async">
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -638,8 +641,8 @@
     <div class="footer-inner">
       <div>
         <div class="brand">
-          <img class="logo-mark" src="assets/images/naushad-logo-small.jpg" alt="" aria-hidden="true" width="128" height="128" loading="lazy" decoding="async">
-          <span class="logo-word">Md-Naushad Ansari<span>.</span></span>
+          <img class="logo-mark" src="assets/images/naushad-logo-small.png" alt="" aria-hidden="true" width="140" height="140" loading="lazy" decoding="async">
+          <span class="logo-word">Naushad Ansari<span>~</span></span>
         </div>
         <div class="footer-tag">Always ready to learn.</div>
       </div>
